@@ -6,20 +6,23 @@ terraform-docker: Sandbox with Amazon Linux and Terraform. AWS APIS are mocked w
 ```bash
 git clone https://github.com/diegopacheco/terraform-docker.git
 cd terraform-docker/
-./terraform-docker.sh bake
 ```
+
+Install localstack
+Install terraform
+Install aws (if you want to interact with the created S3 bucket)
 
 ## How to Run?
 Terminal 1
 ```bash
-./terraform-docker.sh localstack
+./helper.sh localstack
 ```
 Terminal 2
 ```bash
-./terraform-docker.sh run
+./helper.sh run
 ```
 ```bash
-./terraform-docker.sh run
+./helper.sh run
 
 Initializing provider plugins...
 
